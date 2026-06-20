@@ -1,0 +1,56 @@
+CONTROL PLAGAS - SINCRONIZACION EN LA NUBE
+
+OBJETIVO
+
+Que puedas entrar desde casa, trabajo o cualquier computadora usando el mismo enlace.
+Los cambios se guardan en el servidor central y aparecen para el mismo usuario.
+
+IMPORTANTE
+
+No debes abrir una copia diferente en cada computadora.
+Todas las computadoras deben entrar al mismo enlace de internet.
+
+EJEMPLO
+
+Casa entra a:
+https://tu-sistema.onrender.com
+
+Trabajo entra al mismo:
+https://tu-sistema.onrender.com
+
+Si ambas usan el mismo usuario y contrasena, veran los mismos datos.
+
+OPCION RECOMENDADA
+
+Subir esta carpeta "control-plagas-nube" a GitHub y luego conectarla a Render.
+
+PASOS GENERALES
+
+1. Sube esta carpeta a un repositorio de GitHub.
+2. En Render crea un Web Service.
+3. Conecta el repositorio.
+4. Usa:
+   Build Command: npm install
+   Start Command: npm start
+5. Agrega un Persistent Disk:
+   Mount Path: /opt/render/project/src/data
+   Size: 1 GB
+6. Render te dara un enlace publico.
+7. Usa ese enlace desde todas las computadoras.
+
+USUARIO INICIAL
+
+Usuario: admin
+Contrasena: admin123
+Codigo de Compania: CP
+
+DATOS POR USUARIO
+
+El sistema guarda los datos separados por usuario.
+Por ejemplo, el usuario admin guarda en:
+data/storage-admin.json
+
+NO BORRAR LA CARPETA DATA
+
+La carpeta data es donde se guardan los cambios.
+En la nube debe tener disco persistente para que los datos no se pierdan al reiniciar el servidor.
