@@ -29,7 +29,7 @@ Usuario inicial:
 admin
 
 Contrasena inicial:
-admin123
+123
 
 Codigo de Compania:
-CP
+GEA
