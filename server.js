@@ -34,10 +34,10 @@ function userStorageFile(username) {
 function publicConfig() {
   const saved = readJson(SYSTEM_CONFIG_FILE, null);
   if (saved) return {
-    name: saved.name || "CP Control Plagas",
-    loginInitials: saved.loginInitials || "CP",
+    name: saved.name || "GEA Control Plagas",
+    loginInitials: saved.loginInitials || "GEA",
     loginTitle: saved.loginTitle || "Control Plagas",
-    companyCode: saved.companyCode || "CP",
+    companyCode: saved.companyCode || "GEA",
     loginBackground: saved.loginBackground || "#e9e9e9",
     loginBrandColor: saved.loginBrandColor || "#e2261c",
     loginButtonColor: saved.loginButtonColor || "#e2261c"
@@ -45,10 +45,10 @@ function publicConfig() {
   const adminStore = readJson(userStorageFile("admin"), readJson(STORE_FILE, {}));
   const config = adminStore.config || {};
   return {
-    name: config.name || "CP Control Plagas",
-    loginInitials: config.loginInitials || "CP",
+    name: config.name || "GEA Control Plagas",
+    loginInitials: config.loginInitials || "GEA",
     loginTitle: config.loginTitle || "Control Plagas",
-    companyCode: config.companyCode || "CP",
+    companyCode: config.companyCode || "GEA",
     loginBackground: config.loginBackground || "#e9e9e9",
     loginBrandColor: config.loginBrandColor || "#e2261c",
     loginButtonColor: config.loginButtonColor || "#e2261c"
@@ -68,7 +68,7 @@ function verify(password, stored) {
 function ensureUsers() {
   const users = readJson(USERS_FILE, null);
   if (users && users.length) return users;
-  const initial = [{ username: "admin", passwordHash: hash("admin123"), role: "admin" }];
+  const initial = [{ username: "admin", passwordHash: hash("123"), role: "admin" }];
   writeJson(USERS_FILE, initial);
   return initial;
 }
