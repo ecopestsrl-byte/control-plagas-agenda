@@ -1,0 +1,12 @@
+[
+  {
+    "username": "propietario",
+    "passwordHash": "3ef6923746a07d1a031e34c5ae985777:771725b30456aabd07ab8d72d16fcad117c57b6c59120cc8bd7159ae8dc728e04ea712fdc1409f938b52f5f300e85855109edce99822b03d2bfef701423e652c",
+    "role": "owner"
+  },
+  {
+    "username": "admin",
+    "passwordHash": "61d911d7ee25c6055c2d5846e40073f8:620e071a8ea4011e92342ebfc56aa3563da3e967a2b1fd6660d5dfb720807636c5c46e73ee0c27009ade53533b38c985826276994d2ed2dd9ab9e39d0947691d",
+    "role": "admin"
+  }
+]
