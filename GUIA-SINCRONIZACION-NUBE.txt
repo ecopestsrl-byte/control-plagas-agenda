@@ -1,0 +1,46 @@
+CONTROL PLAGAS - VERSION PARA GITHUB Y RENDER
+
+Sube el contenido de esta carpeta a GitHub.
+
+En GitHub debe quedar asi:
+
+package.json
+server.js
+render.yaml
+README.md
+GUIA-SINCRONIZACION-NUBE.txt
+public/
+data/
+
+No subas el ZIP completo a Render.
+Primero descomprime y sube los archivos.
+
+En Render:
+
+Build Command: npm install
+Start Command: npm start
+
+Para que los datos no se pierdan, agrega Persistent Disk:
+
+Mount Path:
+/opt/render/project/src/data
+
+Environment Variable:
+DATA_DIR=/opt/render/project/src/data
+
+IMPORTANTE:
+Si Render no tiene Persistent Disk, los cambios de configuracion, logo,
+usuario, contrasena y servicios pueden perderse cuando Render reinicia
+o cuando haces un nuevo deploy.
+
+En Render entra a Disk y confirma que exista un disco montado en:
+/opt/render/project/src/data
+
+Usuario inicial:
+admin
+
+Contrasena inicial:
+admin123
+
+Codigo de Compania:
+CP
